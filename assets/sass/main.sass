@@ -1,6 +1,261 @@
-body
-    width: 100%
-    top: 0
-    left: 0
-    height: 100%
+.h-100vh
+    height: 100vh
+
+#loader
     position: absolute
+    top: 0
+    background: #fff
+    left: 0
+    z-index: 99999999999
+
+.circle
+    width: 170px
+    height: 170px
+    background: #f00
+    position: absolute
+    top: -40px
+    right: -45px
+    border-radius: 100px
+    border: 1px solid #707070
+
+.text-heading
+    color: #319795
+    font-size: 75px
+    line-height: 90px
+    letter-spacing: 2.5px
+
+main
+    position: absolute
+    top: 0
+    width: 100%
+    .top-bar
+        color: #319795
+        text-align: right
+        font-size: 17px
+        width: 100%
+        height: 72px
+        z-index: 9999
+        position: fixed
+        top: 0
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        background: #fff
+        padding: 0 15px
+        box-shadow: 0px 3px 6px #00000029
+        border-radius: 0px 0px 12px 12px
+        &::after
+            position: absolute
+            content: ""
+            top: 0
+            left: 0
+            width: 100%
+            background-image: linear-gradient(90deg, #319795 0%, #3182CE 100%)
+            height: 5px
+    .bottom-bar
+        color: #319795
+        text-align: right
+        font-size: 17px
+        height: 80px
+        position: fixed
+        bottom: 0
+        display: flex
+        z-index: 999
+        align-items: center
+        justify-content: flex-end
+        background: #fff
+        width: 100%
+        padding: 0 15px
+        box-shadow: 0px -1px 3px #00000033
+        border-radius: 12px 12px 0px 0px
+
+        .custom-btn
+            width: 100%
+            color: #fff
+            padding: 10px 0px
+            background-image: linear-gradient(95deg, #319795 0%, #3182CE 100%)
+            border-radius: 12px
+    
+    .header
+        background: linear-gradient(141deg, #EBF4FF 0%, #E6FFFA 100%)
+        font-size: 42px
+        height: 100vh
+        position: relative
+        z-index: 100
+        width: 100%
+        margin-bottom: 100px
+        line-height: 50px
+        font-family: 'lato'
+        &::after
+            content: ""
+            bottom: 80px
+            width: 100%
+            left: 0
+            z-index: 1
+            height: 100%
+            position: absolute
+            background-image: url('../img/undraw_agreement_aajr.svg')
+            background-repeat: no-repeat
+            background-position: bottom
+
+        &::before
+            content: ""
+            background-image: url('../img/wave-01.png')
+            width: 100%
+            position: absolute
+            bottom: -140px
+            left: 0
+            z-index: 22
+            background-repeat: no-repeat
+            background-size: cover
+            height: 140px
+
+        .heading
+            padding: 125px 0 0 0
+            text-align: center
+            font-size: 55px
+            line-height: 75px
+            font-family: 'Lato'
+            z-index: 2
+            letter-spacing: 1.26px
+            color: #2D3748
+            opacity: 1
+
+    .main-conent
+        padding: 30px 0px
+        padding-bottom: 90px
+        .btn-group.custom
+            width: 90%
+            
+            .btn
+                border: 1px solid #CBD5E0
+                color: #319795
+                font-size: 14px
+                outline: none !important
+                box-shadow: none
+                &.active
+                    background-color: #81E6D9
+                    color: #fff
+                    border: none
+        
+        .tabs-heading
+            font-size: 21px
+            width: 80%
+            margin: 0 auto
+            color: #4A5568
+            padding-top: 30px
+            text-align: center
+
+        .first-image
+            padding-top: 30px
+            text-align: right
+            width: 90%
+            position: relative
+            margin: 0 auto
+            &::after
+                content: ""
+                width: 200px
+                z-index: -1
+                height: 200px
+                border-radius: 100px
+                position: absolute
+                bottom: -40px
+                left: -70px
+                background: #F7FAFC
+            img
+                width: 65%
+            .text
+                position: relative
+                top: -103px
+                height: 100px
+                align-items: baseline
+                display: flex
+                justify-content: flex-end
+                color: #718096
+                p   
+                    padding-right: 90px
+                    font-size: 15px
+                span
+                    font-size: 130px
+        .second-image
+            background: #E6FFFA
+            padding: 0 5% 30px
+            padding-top: 90px
+            text-align: center 
+            width: 100%
+            position: relative
+            margin: 0 auto
+            &::after
+                content: ""
+                bottom: -70px
+                width: 100%
+                background-image: url('../img/wave.png')
+                position: absolute
+                left: 0
+                height: 70px
+                background-size: cover
+                background-repeat: no-repeat
+            &::before
+                content: ""
+                top: -70px
+                width: 100%
+                background-image: url('../img/wave.png')
+                position: absolute
+                left: 0
+                height: 70px
+                transform: rotateZ(180deg)
+                background-size: cover
+                background-repeat: no-repeat
+
+            img
+                width: 50%
+                margin: 0 auto
+
+            .text
+                position: relative
+                top: -103px
+                height: 100px
+                align-items: baseline
+                display: flex
+                justify-content: flex-end
+                color: #718096
+                p   
+                    padding-right: 50px
+                    font-size: 15px
+                span
+                    font-size: 130px
+        .third-image
+            padding: 0 5% 30px
+            padding-top: 90px
+            text-align: right 
+            width: 100%
+            position: relative
+            margin: 0 auto
+            &::after
+                content: ""
+                width: 300px
+                z-index: -1
+                height: 400px
+                border-radius: 50%
+                position: absolute
+                top: -40px
+                left: -70px
+                background: #F7FAFC
+            img
+                width: 75%
+                margin: 0 auto
+
+            .text
+                position: relative
+                top: -103px
+                height: 100px
+                align-items: baseline
+                display: flex
+                justify-content: flex-end
+                color: #718096
+                p   
+                    padding-right: 90px
+                    font-size: 15px
+                    text-align: left
+                span
+                    font-size: 130px

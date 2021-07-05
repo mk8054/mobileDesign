@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/main.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="loader">
+        <div class="row h-100vh align-content-between">
+            <div class="col-sm-12 position-relative">
+                <div class="circle">
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="text-heading">
+                    Test <br> Mobile <br> Index
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="w-100">
+        <div class="top-bar">
+            Login
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 header">
+                    <h1 class="heading">
+                        Deine Job <br> website
+                    </h1>
+                </div>
+                <div class="col-12 main-conent text-center">
+                    <div class="btn-group custom">
+                        <a id="first-btn" href="javascript:void(0)" onclick="show('first')" class="btn btn-tab active"
+                            aria-current="page">Arbeitnehmer</a>
+                        <a id="second-btn" href="javascript:void(0)" onclick="show('second')"
+                            class="btn btn-tab">Arbeitgeber</a>
+                        <a id="third-btn" href="javascript:void(0)" onclick="show('third')"
+                            class="btn btn-tab">Temporärbüro</a>
+                    </div>
+                    <div id="first" class="tabs">
+                        <div class="tabs-heading">
+                            Drei einfache Schritte <br> zu deinem neuen Job
+                        </div>
+                        <div class="first-image">
+                            <img src="./assets/img/undraw_Profile_data_re_v81r.svg" alt="first" class="first">
+                            <div class="text">
+                                <span>
+                                    1.
+                                </span>
+                                <p>
+                                    Erstellen dein Lebenslauf
+                                </p>
+                            </div>
+                        </div>
+                        <div class="second-image">
+                            <div class="text">
+                                <span>
+                                    2.
+                                </span>
+                                <p>
+                                    Erstellen dein Lebenslauf
+                                </p>
+                            </div>
+                            <img src="./assets/img/undraw_task_31wc.svg" alt="first" class="first">
+                        </div>
+                        <div class="third-image">
+                            <div class="text">
+                                <span>
+                                    3.
+                                </span>
+                                <p>
+                                    Mit nur einem Klick
+                                    <br> bewerben
+                                </p>
+                            </div>
+                            <img src="./assets/img/undraw_personal_file_222m.svg" alt="first" class="first">
+                        </div>
+                    </div>
+                    <div id="second" class="tabs">
+                        <div class="tabs-heading">
+                            Drei einfache Schritte <br> zu deinem neuen Mitarbeiter
+                        </div>
+                        <div class="first-image">
+                            <img src="./assets/img/undraw_Profile_data_re_v81r.svg" alt="first" class="first">
+                            <div class="text">
+                                <span>
+                                    1.
+                                </span>
+                                <p class="text-left">
+                                    Erstellen dein <br> unternehmensprofil
+                                </p>
+                            </div>
+                        </div>
+                        <div class="second-image">
+                            <div class="text">
+                                <span>
+                                    2.
+                                </span>
+                                <p>
+                                    Erstellen eidn Jobinserat
+                                </p>
+                            </div>
+                            <img src="./assets/img/undraw_about_me_wa29.svg" alt="first" class="first"
+                                style="width: 75%;">
+                        </div>
+                        <div class="third-image text-center">
+                            <div class="text">
+                                <span>
+                                    3.
+                                </span>
+                                <p>
+                                    Wähle deinen <br> neuen Mitarbeiter aus
+                                </p>
+                            </div>
+                            <img src="./assets/img/undraw_swipe_profiles1_i6mr.svg" alt="first" class="first">
+                        </div>
+                    </div>
+                    <div id="third" class="tabs">
+                        <div class="tabs-heading">
+                            Drei einfache Schritte zur <br> Vermittlung neuer Mitarbeiter
+                        </div>
+                        <div class="first-image">
+                            <img src="./assets/img/undraw_Profile_data_re_v81r.svg" alt="first" class="first">
+                            <div class="text">
+                                <span>
+                                    1.
+                                </span>
+                                <p>
+                                    Erstellen dein Lebenslauf
+                                </p>
+                            </div>
+                        </div>
+                        <div class="second-image">
+                            <div class="text">
+                                <span>
+                                    2.
+                                </span>
+                                <p>
+                                    Erhalte Vermittlungs- <br> angebot von Arbeitgeber
+                                </p>
+                            </div>
+                            <img src="./assets/img/undraw_job_offers_kw5d.svg" alt="first" class="first">
+                        </div>
+                        <div class="third-image text-center">
+                            <div class="text">
+                                <span>
+                                    3.
+                                </span>
+                                <p>
+                                    Vermittlung nach <br> Provision oder <br> Stundenlohn
+                                </p>
+                            </div>
+                            <img src="./assets/img/undraw_business_deal_cpi9.svg" alt="first" class="first">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <button class="btn custom-btn">
+                Kostenlos Registrieren
+            </button>
+        </div>
+    </main>
+</body>
+<script>
+    setTimeout(() => {
+        document.getElementById('loader').remove()
+    }, 20);
+    function show(toOpen) {
+        var tabs = document.getElementsByClassName('tabs');
+        var btnTabs = document.getElementsByClassName('btn-tab');
+        for (let i = 0; i < tabs.length; i++) {
+            const element = tabs[i];
+            element.style.display = "none"
+        }
+        for (let i = 0; i < btnTabs.length; i++) {
+            const element = btnTabs[i];
+            element.classList.remove("active")
+        }
+        switch (toOpen) {
+            case 'first':
+                document.getElementById('first-btn').classList.add('active')
+                break;
+            case 'second':
+                document.getElementById('second-btn').classList.add('active')
+                break;
+            case 'third':
+                document.getElementById('third-btn').classList.add('active')
+                break;
+
+            default:
+                break;
+        }
+        var x = document.getElementById(toOpen);
+        x.style.display = "block";
+    }
+    show('first')
+</script>
+
+</html>
